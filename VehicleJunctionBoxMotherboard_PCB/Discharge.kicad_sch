@@ -1529,7 +1529,7 @@
     )
     (pin "1" (uuid 0657abe9-a399-4a6b-80ab-1d7429d4156c))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "TP3") (unit 1)
         )
@@ -1555,7 +1555,7 @@
     (pin "1" (uuid 2e306457-a203-45bd-8828-39a6fc7884b5))
     (pin "2" (uuid 906e14b4-a894-4fb8-92ce-dc27c4d28378))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "R31") (unit 1)
         )
@@ -1585,7 +1585,7 @@
     )
     (pin "1" (uuid c0c87afa-3ec5-4a07-a91d-a2e85c2df1f5))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR04") (unit 1)
         )
@@ -1616,7 +1616,7 @@
     (pin "1" (uuid 0dc43470-53d5-4048-a5f0-8aabefb6e301))
     (pin "2" (uuid 88f1025c-88bd-4893-b9a8-76ceed1731aa))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "R29") (unit 1)
         )
@@ -1647,7 +1647,7 @@
     (pin "1" (uuid 42c91edb-66df-49cd-a4cd-0b616c8b69b9))
     (pin "2" (uuid 02c362c4-d8d9-4e13-a1ec-7b1e0e71321d))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "R30") (unit 1)
         )
@@ -1677,7 +1677,7 @@
     )
     (pin "1" (uuid 306fe6b6-489b-46aa-9551-ef84e97973c3))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR050") (unit 1)
         )
@@ -1707,7 +1707,7 @@
     )
     (pin "1" (uuid d5abcea7-62bf-4307-bf34-ec64bfbbb6eb))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR066") (unit 1)
         )
@@ -1741,7 +1741,7 @@
     (pin "3" (uuid a02b7cda-327f-4684-b31e-ef583aa12642))
     (pin "4" (uuid a6285476-fb44-4f84-8c58-ac87c85b9db6))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "U10") (unit 1)
         )
@@ -1767,7 +1767,7 @@
     (pin "1" (uuid 571cfd34-99ba-4e29-9267-f6e6de328605))
     (pin "2" (uuid b02dbde3-fc2c-481a-8f28-4e8b7b8d0e48))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "R32") (unit 1)
         )
@@ -1798,7 +1798,7 @@
     (pin "1" (uuid 7e743bab-fdbe-4501-ab6c-c42edaa8d609))
     (pin "2" (uuid 053bd543-d530-44f2-8d60-00d68f44f229))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
           (reference "R33") (unit 1)
         )
@@ -1833,7 +1833,7 @@
     (pin "7" (uuid 20353c55-0e82-479f-bf59-21dee1c21c1f))
     (pin "8" (uuid 6bdd8da1-562e-4e2b-9371-d9df3e7bb9de))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "U15") (unit 1)
         )
@@ -1863,7 +1863,7 @@
     )
     (pin "1" (uuid dcdf5cf5-3f21-42f9-9b2b-bd9068abb99f))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR053") (unit 1)
         )
@@ -1893,7 +1893,7 @@
     )
     (pin "1" (uuid ad3f1b5b-0f00-4dee-b3ca-f547062839f2))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "TP2") (unit 1)
         )
@@ -1918,7 +1918,7 @@
     )
     (pin "1" (uuid 5654a6d1-fadc-4533-86d0-bf3f7428385d))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR047") (unit 1)
         )
@@ -1948,7 +1948,7 @@
     )
     (pin "1" (uuid 03d2b70f-9668-49cd-b681-87735dca6089))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR045") (unit 1)
         )
@@ -1978,7 +1978,7 @@
     )
     (pin "1" (uuid 37b1f5db-2534-4cc1-8c64-833deca208db))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR041") (unit 1)
         )
@@ -2009,7 +2009,7 @@
     (pin "1" (uuid 7507110a-0892-41b5-a13f-a322d7386654))
     (pin "2" (uuid 74fe460c-9274-4ddb-8d19-08fbb79818f0))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R3") (unit 1)
         )
@@ -2038,7 +2038,7 @@
     (pin "1" (uuid ad7488cf-8e46-4781-b24e-d568085d1e05))
     (pin "2" (uuid f49f0987-d9c8-43a9-bb72-fdc78384ea7a))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R4") (unit 1)
         )
@@ -2067,7 +2067,7 @@
     (pin "1" (uuid 20e14c0b-6486-4711-9d85-589d085e2ba3))
     (pin "2" (uuid 8d8c0c14-aad4-4857-97b5-2d014564ac11))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "C20") (unit 1)
         )
@@ -2098,7 +2098,7 @@
     (pin "1" (uuid 9ded16c7-9168-4dd0-b156-207c724a46b4))
     (pin "2" (uuid 11e27ff1-17fb-4c4c-b07d-21bf6793dce5))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "D5") (unit 1)
         )
@@ -2128,7 +2128,7 @@
     )
     (pin "1" (uuid 0d07fda7-9595-4f0a-9ac5-093abd8c9ccd))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR048") (unit 1)
         )
@@ -2159,7 +2159,7 @@
     (pin "1" (uuid 2ed508ee-53c7-42be-bcc1-fbc26c46d4d8))
     (pin "2" (uuid 537811a2-33ee-4929-bb92-8c0b652bbb49))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
           (reference "C21") (unit 1)
         )
@@ -2187,7 +2187,7 @@
     )
     (pin "1" (uuid 9bb01ccd-b1ce-40e7-af07-3fb34343554f))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR043") (unit 1)
         )
@@ -2218,7 +2218,7 @@
     (pin "1" (uuid 57f99a8d-8074-443d-91f1-01c4becbef1a))
     (pin "2" (uuid 3fb4e456-eea9-4747-aec6-d61a96d301b5))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "HS1") (unit 1)
         )
@@ -2248,7 +2248,7 @@
     )
     (pin "1" (uuid ccfbb35c-3ad0-40aa-9f87-79e37e4f390c))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR052") (unit 1)
         )
@@ -2297,7 +2297,7 @@
     (pin "8" (uuid d893c7af-655b-45b8-820e-4780006aaa7b))
     (pin "9" (uuid 2d5765cb-92c3-465d-b617-e20769bfd83b))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "U12") (unit 1)
         )
@@ -2327,7 +2327,7 @@
     )
     (pin "1" (uuid c176aef5-25f4-4d89-af9e-73b82dd25737))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR054") (unit 1)
         )
@@ -2357,7 +2357,7 @@
     )
     (pin "1" (uuid 4abff4ff-746d-4cb8-8b1f-6e5c04672a74))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR051") (unit 1)
         )
@@ -2388,7 +2388,7 @@
     (pin "1" (uuid 97dc25e3-223a-4fc2-a217-ae6447a98e67))
     (pin "2" (uuid 8d7d7fb7-3bd7-4f4c-814a-f69fcce0e40b))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R2") (unit 1)
         )
@@ -2417,7 +2417,7 @@
     (pin "1" (uuid 949c9c67-36e5-485f-90c6-10f8c04ce815))
     (pin "2" (uuid 453fcedb-0979-40ae-a443-506cd76e985c))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R1") (unit 1)
         )
@@ -2447,7 +2447,7 @@
     (pin "2" (uuid 5383f59b-4a4f-470b-ae8f-f230c1b15991))
     (pin "3" (uuid 780103de-e42e-4fbb-9306-ef05623abc2a))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "RV2") (unit 1)
         )
@@ -2477,7 +2477,7 @@
     )
     (pin "1" (uuid 19da8ff2-03b4-445c-a8f3-b6d2b4ba81bf))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR042") (unit 1)
         )
@@ -2509,7 +2509,7 @@
     (pin "2" (uuid 9e4eb28a-7f5b-4911-8f10-09a82e16ae8a))
     (pin "3" (uuid 71ce2297-3bb4-4e32-aa63-b251ac894308))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "Q1") (unit 1)
         )
@@ -2540,7 +2540,7 @@
     (pin "1" (uuid bd94bc18-b344-4423-a472-6f78dfe1a25a))
     (pin "2" (uuid 57a430d3-12c2-4b12-9eb4-b4c203aa5743))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "C19") (unit 1)
         )
@@ -2570,7 +2570,7 @@
     )
     (pin "1" (uuid 9ba792f4-ed45-4b3d-8b32-4457531134c4))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR046") (unit 1)
         )
@@ -2604,7 +2604,7 @@
     (pin "3" (uuid 9c066122-6797-436a-8792-ea3d2d152003))
     (pin "4" (uuid 2e67d2f3-f9ac-46e3-b2f6-ec0dfafc7efe))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "U13") (unit 1)
         )
@@ -2629,7 +2629,7 @@
     )
     (pin "1" (uuid 37b53522-17a1-4621-9118-da208bc79e14))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR049") (unit 1)
         )
@@ -2660,7 +2660,7 @@
     (pin "1" (uuid 86e21c26-beeb-45e8-88fb-7ee78d33f33f))
     (pin "2" (uuid 50c5a8fe-a215-4077-8b6e-59afed506f7a))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "C5") (unit 1)
         )
@@ -2691,7 +2691,7 @@
     (pin "1" (uuid 6b666f38-4d0f-4131-b1cd-9acb23de14bf))
     (pin "2" (uuid ae97934a-8f37-4985-acc2-7f0f1b52c7d2))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "C18") (unit 1)
         )
@@ -2721,7 +2721,7 @@
     )
     (pin "1" (uuid 8caa99f3-8f07-4876-81a9-5ae0f6706050))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
           (reference "#PWR063") (unit 1)
         )

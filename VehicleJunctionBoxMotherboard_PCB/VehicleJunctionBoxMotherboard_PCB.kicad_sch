@@ -12,63 +12,6 @@
   )
 
   (lib_symbols
-    (symbol "Comparator:TLV7031DBV" (pin_names (offset 0.127)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -1.27 6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "TLV7031DBV" (at -1.27 3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at -2.54 -5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv7031.pdf" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "cmp" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Single, 1.6V-6.5V, 315nA Quiescent, Push-Pull Output, Comparator, SOT-23-5/SC-70" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SOT?23*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "TLV7031DBV_0_1"
-        (polyline
-          (pts
-            (xy -5.08 5.08)
-            (xy 5.08 0)
-            (xy -5.08 -5.08)
-            (xy -5.08 5.08)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin power_in line (at -2.54 -7.62 90) (length 3.81)
-          (name "V-" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -2.54 7.62 270) (length 3.81)
-          (name "V+" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "TLV7031DBV_1_1"
-        (pin output line (at 7.62 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 2.54 0) (length 2.54)
-          (name "+" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 -2.54 0) (length 2.54)
-          (name "-" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Connector:Conn_01x01_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -554,6 +497,68 @@
         (pin passive line (at 0 -2.54 90) (length 2.032)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Device:D_Zener" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D3" (at 2.54 1.27 90)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "771-PLVA650A" (at 2.54 -1.27 90)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Zener diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "D_Zener_0_1"
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+            (xy -0.762 1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "D_Zener_1_1"
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1328,65 +1333,53 @@
     )
   )
 
-  (junction (at 189.23 121.92) (diameter 0) (color 0 0 0 0)
-    (uuid 045ac442-3b99-455b-8162-4c6b91e79a45)
-  )
   (junction (at 278.13 45.72) (diameter 0) (color 0 0 0 0)
     (uuid 08708011-8194-4ad7-9074-9f778038345e)
   )
-  (junction (at 142.24 119.38) (diameter 0) (color 0 0 0 0)
+  (junction (at 187.96 91.44) (diameter 0) (color 0 0 0 0)
+    (uuid 14ad9b42-862b-4629-be61-e799b29a8da6)
+  )
+  (junction (at 187.96 125.73) (diameter 0) (color 0 0 0 0)
     (uuid 1823ddc9-68cd-4d10-883f-89ce14f52da8)
-  )
-  (junction (at 243.84 128.27) (diameter 0) (color 0 0 0 0)
-    (uuid 28ec20c4-038a-4ef7-af67-ee91041676f4)
-  )
-  (junction (at 167.64 110.49) (diameter 0) (color 0 0 0 0)
-    (uuid 2d5a08ce-707c-45d6-b0b3-560f45abf694)
-  )
-  (junction (at 189.23 87.63) (diameter 0) (color 0 0 0 0)
-    (uuid 569e7183-8742-43a7-85b5-abdbf7b64d21)
   )
   (junction (at 205.74 260.35) (diameter 0) (color 0 0 0 0)
     (uuid 6f28e542-3521-4d68-9e65-b29235804f56)
   )
-  (junction (at 85.09 251.46) (diameter 0) (color 0 0 0 0)
+  (junction (at 69.85 251.46) (diameter 0) (color 0 0 0 0)
     (uuid 749a3f5b-bb9a-43da-9c20-d31572f1cb86)
   )
   (junction (at 240.03 250.19) (diameter 0) (color 0 0 0 0)
     (uuid 7713b13b-094b-4b88-955b-d73c00610d6e)
   )
-  (junction (at 68.58 259.08) (diameter 0) (color 0 0 0 0)
+  (junction (at 53.34 259.08) (diameter 0) (color 0 0 0 0)
     (uuid 7b150003-ce58-436e-9083-3b62d11176e3)
   )
-  (junction (at 76.2 251.46) (diameter 0) (color 0 0 0 0)
+  (junction (at 60.96 251.46) (diameter 0) (color 0 0 0 0)
     (uuid 86d6c75a-9d09-4dd3-84f5-7ac89adea48f)
   )
-  (junction (at 60.96 251.46) (diameter 0) (color 0 0 0 0)
+  (junction (at 45.72 251.46) (diameter 0) (color 0 0 0 0)
     (uuid bb29b890-71ed-484c-b0c4-6ce3bfafcdc7)
   )
-  (junction (at 142.24 85.09) (diameter 0) (color 0 0 0 0)
-    (uuid e8f0ac61-9b44-4c90-b34e-5e78fdbbc4d9)
-  )
-  (junction (at 167.64 76.2) (diameter 0) (color 0 0 0 0)
-    (uuid ec05e9a4-c107-4ca5-bf76-d8951da63609)
+  (junction (at 80.01 251.46) (diameter 0) (color 0 0 0 0)
+    (uuid cca6bbc6-19b4-485f-a507-6a3f6df13fce)
   )
 
   (wire (pts (xy 289.56 31.75) (xy 289.56 33.02))
     (stroke (width 0) (type default))
     (uuid 0852639b-a280-43b2-8778-b15034b6496b)
   )
-  (wire (pts (xy 142.24 85.09) (xy 142.24 86.36))
-    (stroke (width 0) (type default))
-    (uuid 0b4fd112-6ef8-430f-8b4b-029dadb2e83f)
-  )
   (polyline (pts (xy 29.21 237.49) (xy 110.49 237.49))
     (stroke (width 0) (type default))
     (uuid 126f94fd-ab3f-4a2e-9f8f-9fac9c2cea7d)
   )
 
-  (wire (pts (xy 68.58 259.08) (xy 62.23 259.08))
+  (wire (pts (xy 53.34 259.08) (xy 46.99 259.08))
     (stroke (width 0) (type default))
     (uuid 18343241-b064-4b58-8bce-ae981dac3d58)
+  )
+  (wire (pts (xy 80.01 251.46) (xy 90.17 251.46))
+    (stroke (width 0) (type default))
+    (uuid 185d98fe-18c7-41f9-8359-f6901fe28569)
   )
   (wire (pts (xy 278.13 45.72) (xy 292.1 45.72))
     (stroke (width 0) (type default))
@@ -1400,16 +1393,12 @@
     (stroke (width 0) (type default))
     (uuid 214413a3-52bc-4a9e-8cdf-8f4f6ab13f2e)
   )
-  (wire (pts (xy 189.23 121.92) (xy 187.96 121.92))
-    (stroke (width 0) (type default))
-    (uuid 214f4d4b-42f5-4269-ae49-e360a8f75bff)
-  )
   (polyline (pts (xy 274.32 270.51) (xy 274.32 237.49))
     (stroke (width 0) (type default))
     (uuid 23b03b11-7839-41cc-85bf-4cb44740a791)
   )
 
-  (wire (pts (xy 142.24 85.09) (xy 142.24 83.82))
+  (wire (pts (xy 187.96 90.17) (xy 187.96 91.44))
     (stroke (width 0) (type default))
     (uuid 26e4aa41-14d3-4ac1-8e81-833d8b5aa146)
   )
@@ -1418,18 +1407,6 @@
     (uuid 26fa824d-ac6b-484d-bfe3-a855c97b2d77)
   )
 
-  (wire (pts (xy 278.13 41.91) (xy 278.13 45.72))
-    (stroke (width 0) (type default))
-    (uuid 2c257171-fb69-4cfd-ac16-d992dc50ff7f)
-  )
-  (wire (pts (xy 243.84 128.27) (xy 251.46 128.27))
-    (stroke (width 0) (type default))
-    (uuid 317fde31-a6e3-4024-924f-4a919e33565a)
-  )
-  (wire (pts (xy 162.56 85.09) (xy 142.24 85.09))
-    (stroke (width 0) (type default))
-    (uuid 33cff04e-7020-463d-aeca-17b4a3de0ade)
-  )
   (wire (pts (xy 205.74 250.19) (xy 205.74 252.73))
     (stroke (width 0) (type default))
     (uuid 38e8deab-ed67-4d99-b89a-50e7958141e4)
@@ -1438,50 +1415,42 @@
     (stroke (width 0) (type default))
     (uuid 38edcc39-3ec9-4737-ad9f-9cd8e7317f0c)
   )
-  (wire (pts (xy 142.24 119.38) (xy 142.24 118.11))
+  (wire (pts (xy 278.13 38.1) (xy 278.13 39.37))
+    (stroke (width 0) (type default))
+    (uuid 395fb3aa-8674-4bee-b22a-575cf94384ed)
+  )
+  (wire (pts (xy 187.96 125.73) (xy 187.96 124.46))
     (stroke (width 0) (type default))
     (uuid 39bc134f-cbf5-44bf-b1e9-723cb793f8b4)
   )
-  (wire (pts (xy 189.23 87.63) (xy 187.96 87.63))
-    (stroke (width 0) (type default))
-    (uuid 3a0141e9-315e-4aa6-9c22-84e9f0b2aac5)
-  )
-  (wire (pts (xy 189.23 87.63) (xy 189.23 88.9))
-    (stroke (width 0) (type default))
-    (uuid 44ae58ad-40d5-4937-8cfb-169eea426152)
-  )
-  (wire (pts (xy 76.2 251.46) (xy 85.09 251.46))
+  (wire (pts (xy 60.96 251.46) (xy 69.85 251.46))
     (stroke (width 0) (type default))
     (uuid 44d44ef1-4ad8-46c7-a739-5a7a88dbec3f)
   )
-  (wire (pts (xy 243.84 121.92) (xy 243.84 120.65))
+  (wire (pts (xy 80.01 259.08) (xy 80.01 261.62))
     (stroke (width 0) (type default))
-    (uuid 45e3cf1f-c476-49d6-8d7c-968e454872cd)
+    (uuid 48884270-75a5-490e-99e7-eff152320d11)
   )
-  (wire (pts (xy 142.24 95.25) (xy 142.24 91.44))
+  (wire (pts (xy 187.96 100.33) (xy 187.96 97.79))
     (stroke (width 0) (type default))
     (uuid 4a1ceee5-0ba5-427f-80dd-de5470844e5a)
   )
-  (wire (pts (xy 76.2 252.73) (xy 76.2 251.46))
+  (wire (pts (xy 187.96 91.44) (xy 187.96 92.71))
+    (stroke (width 0) (type default))
+    (uuid 4ade3894-ad07-43d9-8bf5-caffd560706b)
+  )
+  (wire (pts (xy 60.96 252.73) (xy 60.96 251.46))
     (stroke (width 0) (type default))
     (uuid 4cb339d8-46a9-4fdd-bd95-2e20e092bd23)
-  )
-  (wire (pts (xy 177.8 121.92) (xy 182.88 121.92))
-    (stroke (width 0) (type default))
-    (uuid 4d671b4d-c005-42e6-a1d2-dcb3256a364b)
   )
   (polyline (pts (xy 29.21 237.49) (xy 29.21 271.78))
     (stroke (width 0) (type default))
     (uuid 4d8ba518-caea-4fdd-8584-cfacdb3f2663)
   )
 
-  (wire (pts (xy 142.24 119.38) (xy 142.24 120.65))
+  (wire (pts (xy 187.96 125.73) (xy 187.96 127))
     (stroke (width 0) (type default))
     (uuid 5025cf76-5a7c-43f4-a2c5-790e1bfba02d)
-  )
-  (wire (pts (xy 196.85 87.63) (xy 189.23 87.63))
-    (stroke (width 0) (type default))
-    (uuid 51e5d55d-6255-454c-bd95-8fb60712752b)
   )
   (wire (pts (xy 101.6 248.92) (xy 101.6 250.19))
     (stroke (width 0) (type default))
@@ -1491,7 +1460,7 @@
     (stroke (width 0) (type default))
     (uuid 58ba7ff4-a953-4847-be6a-f28766f722c5)
   )
-  (wire (pts (xy 142.24 129.54) (xy 142.24 125.73))
+  (wire (pts (xy 187.96 134.62) (xy 187.96 132.08))
     (stroke (width 0) (type default))
     (uuid 58cc7c3d-e218-4c73-954f-df83f6fda2a7)
   )
@@ -1499,27 +1468,27 @@
     (stroke (width 0) (type default))
     (uuid 58f05491-b8f8-4d01-a129-a649dc5a3bc1)
   )
+  (wire (pts (xy 187.96 91.44) (xy 199.39 91.44))
+    (stroke (width 0) (type default))
+    (uuid 5fbe8015-61e8-49b2-98cb-4097ab62f913)
+  )
   (wire (pts (xy 292.1 33.02) (xy 289.56 33.02))
     (stroke (width 0) (type default))
     (uuid 6135199a-59a6-4f2a-93c1-a22a9bd6eaa9)
   )
-  (wire (pts (xy 68.58 259.08) (xy 68.58 261.62))
+  (wire (pts (xy 53.34 259.08) (xy 53.34 261.62))
     (stroke (width 0) (type default))
     (uuid 66197d97-db44-4341-adb3-36ece6d6af46)
   )
-  (wire (pts (xy 76.2 257.81) (xy 74.93 259.08))
+  (wire (pts (xy 60.96 257.81) (xy 59.69 259.08))
     (stroke (width 0) (type default))
     (uuid 69c720b1-6109-4eac-8491-088f32d6fd14)
-  )
-  (wire (pts (xy 196.85 121.92) (xy 189.23 121.92))
-    (stroke (width 0) (type default))
-    (uuid 72785fd4-c6a1-4789-8cb6-c5ad0a6b04dd)
   )
   (wire (pts (xy 233.68 260.35) (xy 240.03 260.35))
     (stroke (width 0) (type default))
     (uuid 74bb28fa-ae64-498d-b53c-8cfc6ac55765)
   )
-  (wire (pts (xy 48.26 251.46) (xy 60.96 251.46))
+  (wire (pts (xy 38.1 251.46) (xy 45.72 251.46))
     (stroke (width 0) (type default))
     (uuid 7eed7232-5e73-4904-9def-4477a57b0f06)
   )
@@ -1531,36 +1500,20 @@
     (stroke (width 0) (type default))
     (uuid 8efc81ff-85d2-4fa2-bc20-631ea23746dc)
   )
-  (wire (pts (xy 167.64 76.2) (xy 167.64 80.01))
-    (stroke (width 0) (type default))
-    (uuid 92722f08-83ac-45c4-8589-cd9d04e5f847)
-  )
   (wire (pts (xy 110.49 36.83) (xy 107.95 36.83))
     (stroke (width 0) (type default))
     (uuid 93f29305-a5de-42d8-adbf-e212a56e6f1e)
   )
-  (wire (pts (xy 278.13 34.29) (xy 278.13 36.83))
-    (stroke (width 0) (type default))
-    (uuid 99a03282-54a0-4628-b0bd-0fb4a40269ee)
-  )
-  (wire (pts (xy 62.23 259.08) (xy 60.96 257.81))
+  (wire (pts (xy 46.99 259.08) (xy 45.72 257.81))
     (stroke (width 0) (type default))
     (uuid 9c8d940e-1764-448a-bed6-bbbcbeeca3d8)
-  )
-  (wire (pts (xy 177.8 87.63) (xy 182.88 87.63))
-    (stroke (width 0) (type default))
-    (uuid a16bb018-2881-4a87-8ae2-067450229460)
   )
   (polyline (pts (xy 110.49 271.78) (xy 29.21 271.78))
     (stroke (width 0) (type default))
     (uuid a6b5ea66-5527-479f-bff2-8cc65d02fee3)
   )
 
-  (wire (pts (xy 165.1 76.2) (xy 167.64 76.2))
-    (stroke (width 0) (type default))
-    (uuid a7f8f248-9073-458a-afd6-1834032d5d1f)
-  )
-  (wire (pts (xy 85.09 257.81) (xy 85.09 261.62))
+  (wire (pts (xy 69.85 257.81) (xy 69.85 261.62))
     (stroke (width 0) (type default))
     (uuid aa3c04e4-80cc-427f-a6e3-0706530fd29c)
   )
@@ -1568,24 +1521,16 @@
     (stroke (width 0) (type default))
     (uuid aab84007-2226-4e47-b8db-6ee089db7222)
   )
-  (wire (pts (xy 189.23 121.92) (xy 189.23 123.19))
-    (stroke (width 0) (type default))
-    (uuid ac503b4e-d379-4e21-9005-dd9915d967e9)
-  )
   (polyline (pts (xy 110.49 237.49) (xy 110.49 271.78))
     (stroke (width 0) (type default))
     (uuid b59bb9be-67f1-48b7-9346-8efbbf00c572)
   )
 
-  (wire (pts (xy 165.1 110.49) (xy 167.64 110.49))
-    (stroke (width 0) (type default))
-    (uuid ba943eae-f1a6-40aa-b630-834c7fe2e96f)
-  )
-  (wire (pts (xy 142.24 110.49) (xy 139.7 110.49))
+  (wire (pts (xy 187.96 116.84) (xy 185.42 116.84))
     (stroke (width 0) (type default))
     (uuid bab74863-fcab-41ef-b4dd-b70d907b21ec)
   )
-  (wire (pts (xy 142.24 78.74) (xy 142.24 76.2))
+  (wire (pts (xy 187.96 85.09) (xy 187.96 82.55))
     (stroke (width 0) (type default))
     (uuid be72a3c3-5c0f-468b-98d6-c299f4efa5a1)
   )
@@ -1594,15 +1539,11 @@
     (uuid bf552863-2037-4320-8458-2a37da0910f1)
   )
 
-  (wire (pts (xy 85.09 251.46) (xy 90.17 251.46))
+  (wire (pts (xy 69.85 251.46) (xy 80.01 251.46))
     (stroke (width 0) (type default))
     (uuid c2e8dcf2-a077-4505-a217-5553ab246c40)
   )
-  (wire (pts (xy 243.84 127) (xy 243.84 128.27))
-    (stroke (width 0) (type default))
-    (uuid c88fcd56-20fe-4a95-ab46-02f44270cc6d)
-  )
-  (wire (pts (xy 85.09 251.46) (xy 85.09 252.73))
+  (wire (pts (xy 69.85 251.46) (xy 69.85 252.73))
     (stroke (width 0) (type default))
     (uuid ca147d77-07c5-4db5-8baf-97aff9fe984d)
   )
@@ -1610,11 +1551,11 @@
     (stroke (width 0) (type default))
     (uuid cd29891b-28d8-4be0-8410-696b6ead97a0)
   )
-  (wire (pts (xy 142.24 113.03) (xy 142.24 110.49))
+  (wire (pts (xy 187.96 119.38) (xy 187.96 116.84))
     (stroke (width 0) (type default))
     (uuid cd429f22-0297-4a3f-9388-7c28efb1e3ff)
   )
-  (wire (pts (xy 60.96 252.73) (xy 60.96 251.46))
+  (wire (pts (xy 45.72 252.73) (xy 45.72 251.46))
     (stroke (width 0) (type default))
     (uuid d2484d33-d9cc-445e-9eff-d30c6cc0b7c1)
   )
@@ -1622,7 +1563,7 @@
     (stroke (width 0) (type default))
     (uuid d2fb3a45-688b-4885-8c91-9baf86e40221)
   )
-  (wire (pts (xy 142.24 76.2) (xy 139.7 76.2))
+  (wire (pts (xy 187.96 82.55) (xy 185.42 82.55))
     (stroke (width 0) (type default))
     (uuid d444d615-12fe-45ca-8034-27d0b1155a3f)
   )
@@ -1630,17 +1571,17 @@
     (stroke (width 0) (type default))
     (uuid db8da358-5f1c-4dcb-9ee9-2704ecb3012b)
   )
-  (wire (pts (xy 68.58 259.08) (xy 74.93 259.08))
+  (wire (pts (xy 278.13 44.45) (xy 278.13 45.72))
+    (stroke (width 0) (type default))
+    (uuid de59c0bb-5031-49d5-b3fd-0fcef1c9fc7c)
+  )
+  (wire (pts (xy 53.34 259.08) (xy 59.69 259.08))
     (stroke (width 0) (type default))
     (uuid e19ff147-b267-4de9-8ca6-8389f5873f77)
   )
   (wire (pts (xy 240.03 257.81) (xy 240.03 260.35))
     (stroke (width 0) (type default))
     (uuid e7e8f26b-3d17-42ac-a3ad-820d727a85dd)
-  )
-  (wire (pts (xy 243.84 128.27) (xy 243.84 129.54))
-    (stroke (width 0) (type default))
-    (uuid eaad8f19-71a7-4944-abbe-82fb41264cec)
   )
   (wire (pts (xy 168.91 40.64) (xy 168.91 43.18))
     (stroke (width 0) (type default))
@@ -1650,18 +1591,13 @@
     (stroke (width 0) (type default))
     (uuid ee068c71-5c01-48d1-bf6f-8d2035b31cc3)
   )
-  (wire (pts (xy 162.56 119.38) (xy 142.24 119.38))
+  (wire (pts (xy 198.12 125.73) (xy 187.96 125.73))
     (stroke (width 0) (type default))
     (uuid fcf36948-3c1c-4bcc-afdd-91d13db0fa74)
   )
   (polyline (pts (xy 187.96 270.51) (xy 274.32 270.51))
     (stroke (width 0) (type default))
     (uuid fdb477a1-4236-4f9b-b3ed-ab0808c9001c)
-  )
-
-  (wire (pts (xy 167.64 110.49) (xy 167.64 114.3))
-    (stroke (width 0) (type default))
-    (uuid ffea4363-d5a8-4155-a2c9-4a6f0fb0d6bf)
   )
 
   (rectangle (start 116.84 68.58) (end 269.24 147.32)
@@ -1679,25 +1615,13 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 182aa88c-ab19-43f8-8a82-7b014c47ca0d)
   )
-  (text "5/2 V Threshold" (at 224.79 129.54 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 2bb5f3a9-1fc2-4474-a7f8-a5190300d45d)
-  )
   (text "Shutdown Loop Monitoring" (at 118.11 71.12 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4381fff0-ad39-4c67-bb77-f490f6e32e23)
   )
-  (text "14V down to 5V" (at 135.89 106.68 0)
+  (text "14V down to 3.3V" (at 180.34 111.76 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5c3b9d39-0729-44ae-b520-49939db9f715)
-  )
-  (text "5V to 3.3V" (at 181.61 106.68 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 638f68eb-8b08-4133-a131-2138e4f64f0d)
-  )
-  (text "When SD Loop is high, Output is High" (at 227.33 111.76 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 908115f7-6a6b-4c41-ba58-335be9643eb2)
   )
   (text "IO" (at 97.79 27.94 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1708,24 +1632,10 @@
     (uuid a361d058-ae1f-48d7-bf9b-4d08a2213841)
   )
 
-  (global_label "Thresh" (shape input) (at 162.56 124.46 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 12c25fc0-48ba-435b-91a2-6bde6b812b6c)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 153.4857 124.46 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Thresh" (shape input) (at 162.56 90.17 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 1e858bca-f097-4dda-ae5e-07a7b2cebdac)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 153.4857 90.17 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "Upstream" (shape output) (at 196.85 87.63 0) (fields_autoplaced)
+  (global_label "Upstream" (shape output) (at 199.39 91.44 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 20fef597-7357-4864-9214-b148322c6d25)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 208.7062 87.63 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 211.2462 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1757,10 +1667,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SD_LP_FROM_HVD" (shape input) (at 139.7 110.49 180) (fields_autoplaced)
+  (global_label "SD_LP_FROM_HVD" (shape input) (at 185.42 116.84 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 2f880b4a-e50b-46d2-9b7d-0f302d2daef8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 120.2842 110.49 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.0042 116.84 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1799,24 +1709,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "Thresh" (shape output) (at 251.46 128.27 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 46be480b-f672-44ef-99b5-954bb3233bc4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 260.5343 128.27 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "GLV+" (shape input) (at 278.13 34.29 90) (fields_autoplaced)
+  (global_label "GLV+" (shape input) (at 278.13 33.02 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 50727e9e-2885-4a59-b5ac-93047d40f16f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 278.13 26.4251 90)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 278.13 25.1551 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Local" (shape input) (at 292.1 35.56 180) (fields_autoplaced)
+  (global_label "Local" (shape input) (at 292.1 38.1 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 52d932cc-af6b-4f43-973f-453853d4aca0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 284.1143 35.56 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 284.1143 38.1 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1862,10 +1765,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "GLV+" (shape input) (at 48.26 251.46 180) (fields_autoplaced)
+  (global_label "GLV+" (shape input) (at 38.1 251.46 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 6fe9db10-3987-4f6a-a005-3cd3f25fb76d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 35.3151 251.46 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 25.1551 251.46 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1911,17 +1814,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SD_LP_IN" (shape input) (at 139.7 76.2 180) (fields_autoplaced)
+  (global_label "SD_LP_IN" (shape input) (at 185.42 82.55 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid db1b69f8-9eac-4259-95a0-132da3c5368c)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 128.1461 76.2 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 173.8661 82.55 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "Upstream" (shape input) (at 292.1 38.1 180) (fields_autoplaced)
+  (global_label "Upstream" (shape input) (at 292.1 35.56 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid ddd4c659-dce1-4bde-ac2b-12b1a8d56378)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 280.2438 38.1 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 280.2438 35.56 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1946,10 +1849,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "Local" (shape output) (at 196.85 121.92 0) (fields_autoplaced)
+  (global_label "Local" (shape output) (at 198.12 125.73 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f12f8879-6065-47cc-852e-bdf1ed40a2fa)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 204.8357 121.92 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 206.1057 125.73 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1978,7 +1881,7 @@
     )
     (pin "1" (uuid 985cbaf9-93ed-4f1e-a245-664f5f4845c4))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "J3") (unit 1)
         )
@@ -2008,7 +1911,7 @@
           (reference "#PWR010") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR07") (unit 1)
         )
@@ -2016,25 +1919,25 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Polarized_Small_US") (at 85.09 255.27 0) (unit 1)
+  (symbol (lib_id "Device:C_Polarized_Small_US") (at 69.85 255.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 15342014-79f6-4a4f-bcc2-413b2826c6ad)
-    (property "Reference" "C8" (at 87.63 254.2032 0)
+    (property "Reference" "C8" (at 72.39 254.2032 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100u" (at 87.63 256.7432 0)
+    (property "Value" "100u" (at 72.39 256.7432 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4" (at 85.09 255.27 0)
+    (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4" (at 69.85 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 85.09 255.27 0)
+    (property "Datasheet" "~" (at 69.85 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b0e2218c-0797-4126-b11d-77ba5386440a))
     (pin "2" (uuid dc5f889c-4326-4ef9-80a2-e8d35d6d7fd4))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "C8") (unit 1)
         )
@@ -2042,24 +1945,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 142.24 95.25 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 187.96 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 20028b23-7e7a-4def-882b-7c77135da527)
-    (property "Reference" "#PWR064" (at 142.24 101.6 0)
+    (property "Reference" "#PWR064" (at 187.96 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 142.24 99.06 0)
+    (property "Value" "GND" (at 187.96 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 142.24 95.25 0)
+    (property "Footprint" "" (at 187.96 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 142.24 95.25 0)
+    (property "Datasheet" "" (at 187.96 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0ccc5833-abcb-4efe-8d87-0e34f4ca1d6d))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR064") (unit 1)
         )
@@ -2094,7 +1997,7 @@
           (reference "#PWR02") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR083") (unit 1)
         )
@@ -2102,24 +2005,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 142.24 129.54 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 187.96 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 242a0883-41e1-4038-9691-e7efb9fe25f0)
-    (property "Reference" "#PWR069" (at 142.24 135.89 0)
+    (property "Reference" "#PWR069" (at 187.96 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 142.24 133.35 0)
+    (property "Value" "GND" (at 187.96 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 142.24 129.54 0)
+    (property "Footprint" "" (at 187.96 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 142.24 129.54 0)
+    (property "Datasheet" "" (at 187.96 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5ebf438a-5842-4cc8-9e1e-6e1823fd898b))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR069") (unit 1)
         )
@@ -2132,25 +2035,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 142.24 88.9 0) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 187.96 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 25c59444-37b0-487b-a193-bebdffda56d0)
-    (property "Reference" "R33" (at 144.78 88.265 0)
+    (property "Reference" "R33" (at 190.5 94.615 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "5.6k" (at 144.78 90.805 0)
+    (property "Value" "5.6k" (at 190.5 97.155 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 142.24 88.9 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 187.96 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 142.24 88.9 0)
+    (property "Datasheet" "~" (at 187.96 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0380925e-05f2-49bb-9831-eb015e415e7e))
     (pin "2" (uuid 0651967e-0ba2-46b1-b354-ed64bbf279a3))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
           (reference "R33") (unit 1)
         )
@@ -2179,44 +2082,9 @@
     (pin "1" (uuid 20037391-f9fe-49da-a33a-162844dd2e2a))
     (pin "2" (uuid 5fd65db5-8ddf-43c8-9665-fbdd27eae056))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Comparator:TLV7031DBV") (at 170.18 87.63 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 316c0286-ec06-4d9f-8c3e-ebe196614c9a)
-    (property "Reference" "U10" (at 175.26 81.28 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TLV7031DBV" (at 175.26 83.82 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 167.64 92.71 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv7031.pdf" (at 170.18 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid b83f151b-d54a-4d46-b878-d475a207b042))
-    (pin "5" (uuid 70aa2ea0-a229-46bf-9541-f5fadbf170ee))
-    (pin "1" (uuid 9843148b-0163-424c-a442-990291f93d35))
-    (pin "3" (uuid 92f69280-4a52-4949-8a3f-dcdd44e22d39))
-    (pin "4" (uuid ce81ce0a-190e-49db-8112-daeeda3c5eb0))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
-          (reference "U10") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
-          (reference "U6") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "U11") (unit 1)
         )
       )
     )
@@ -2240,7 +2108,7 @@
     (pin "1" (uuid 4ca8aed3-d257-4515-9967-5fd3de9e08b6))
     (pin "2" (uuid 57321bac-8e00-4818-a78d-50e1e561dc62))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "J1") (unit 1)
         )
@@ -2270,38 +2138,9 @@
           (reference "#PWR022") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR014") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 189.23 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 38b0274b-ffe3-41e4-8106-83f154881543)
-    (property "Reference" "R33" (at 191.77 90.805 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10k" (at 191.77 93.345 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 189.23 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 189.23 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b992538f-4c83-41bc-9194-ee49b36baa98))
-    (pin "2" (uuid 56325c63-2ad9-41de-9e61-57bb7d068e43))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
-          (reference "R33") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "R40") (unit 1)
         )
       )
     )
@@ -2330,64 +2169,9 @@
           (reference "D2") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "D2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 162.56 76.2 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 42219024-0584-476d-b385-fdb6c2d81793)
-    (property "Reference" "C29" (at 162.5663 71.12 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100n" (at 162.5663 73.66 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 162.56 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 162.56 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 37255635-4cb4-4be6-be3c-e39f7e86ec23))
-    (pin "2" (uuid 7388c688-1460-438a-8a32-497515511d5c))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "C29") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 243.84 132.08 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 482c3e74-73b0-4223-bf0f-667504bdbb3d)
-    (property "Reference" "R33" (at 246.38 131.445 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10k" (at 246.38 133.985 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 243.84 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 243.84 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d4567397-7a96-48ba-9205-037067892940))
-    (pin "2" (uuid d3e6a9ed-dfb5-48c4-8925-76eced5bac2c))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
-          (reference "R33") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "R46") (unit 1)
         )
       )
     )
@@ -2418,9 +2202,39 @@
     (pin "8" (uuid 01784311-320c-45cd-8a6b-4d05c412a183))
     (pin "9" (uuid faba1742-ea3e-46ae-bfe1-61fcb03973ee))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "J9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 80.01 261.62 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 4c9a930f-0c4d-4478-81d7-a40e648135ad)
+    (property "Reference" "#PWR019" (at 80.01 267.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 80.01 265.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 80.01 261.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 80.01 261.62 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b90b8cfa-4be0-4ee6-9353-4fe42215ced4))
+    (instances
+      (project "VehicleJunctionBoxMotherboard_PCB"
+        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+      (project "UCM23_PCB_Fault_Latch"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2449,7 +2263,7 @@
           (reference "F1") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "F2") (unit 1)
         )
@@ -2457,86 +2271,27 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 185.42 87.63 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4ec6c37a-e4c6-40b2-bf90-bbd9641c4dd5)
-    (property "Reference" "R33" (at 185.42 82.55 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "5.6k" (at 185.42 85.09 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 185.42 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 185.42 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2a37065a-454d-414d-a200-4d2c176a253c))
-    (pin "2" (uuid 60928dd4-df0d-416f-af80-0c40abdb0ac4))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
-          (reference "R33") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "R38") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 60.96 255.27 0) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 45.72 255.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4f21108a-d5ab-4839-b53c-f2d8d8dc33cf)
-    (property "Reference" "C1" (at 54.61 254 0)
+    (property "Reference" "C1" (at 39.37 254 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22u" (at 54.61 256.54 0)
+    (property "Value" "22u" (at 39.37 256.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 60.96 255.27 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 45.72 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 60.96 255.27 0)
+    (property "Datasheet" "~" (at 45.72 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8aee21e9-4e63-4da7-be91-ffd02eecf63d))
     (pin "2" (uuid 7ac6ef1a-af20-4416-8bfd-2e2073f250fd))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "C1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 167.64 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 53bf4083-180d-474c-8a6d-6ba4482cd1ae)
-    (property "Reference" "#PWR010" (at 167.64 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 167.64 72.39 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 167.64 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 167.64 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 385a4f9f-4ac4-41b9-9b69-c9c9f8142e36))
-    (instances
-      (project "UCM67_Discharge_TSAL_V2.0_PCB"
-        (path "/52185cc9-1fd6-4b96-945f-5419cec4bf0c"
-          (reference "#PWR010") (unit 1)
-        )
-      )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -2565,7 +2320,7 @@
           (reference "C4") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "C7") (unit 1)
         )
@@ -2573,90 +2328,30 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 189.23 128.27 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 56fb0a67-ccd0-4378-ab6f-948ee7b7548d)
-    (property "Reference" "#PWR058" (at 189.23 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 189.23 132.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 189.23 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 189.23 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 95910efa-96fc-4b38-9afd-739652b8b92f))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR058") (unit 1)
-        )
-      )
-      (project "UCM23_PCB_Fault_Latch"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 142.24 115.57 0) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 187.96 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5a0cfdd6-33bd-4f55-8497-ca22d552449b)
-    (property "Reference" "R33" (at 144.78 114.935 0)
+    (property "Reference" "R33" (at 190.5 121.285 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10k" (at 144.78 117.475 0)
+    (property "Value" "18k" (at 190.5 123.825 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 142.24 115.57 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 187.96 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 142.24 115.57 0)
+    (property "Datasheet" "~" (at 187.96 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e316a858-095d-42c9-a4c0-3519985d1038))
     (pin "2" (uuid ea44a3b4-3405-40f1-ad65-e65857fe25da))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
           (reference "R33") (unit 1)
         )
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R41") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 167.64 129.54 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5b4a13dc-9811-4752-9f15-fac69c249ae5)
-    (property "Reference" "#PWR072" (at 167.64 135.89 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 167.64 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 167.64 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 167.64 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f33d08d0-9f90-4b0b-9000-58ad1e0482f4))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR072") (unit 1)
-        )
-      )
-      (project "UCM23_PCB_Fault_Latch"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2679,7 +2374,7 @@
     )
     (pin "1" (uuid 115376d1-beef-4fab-933d-07d4b64b3ab5))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR010") (unit 1)
         )
@@ -2712,7 +2407,7 @@
     (pin "3" (uuid 28a6b4ca-f533-47ee-b943-7ff037a33031))
     (pin "4" (uuid 2b8fe480-22dd-43a6-8e84-ac7824877534))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "U4") (unit 1)
         )
@@ -2720,60 +2415,30 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 142.24 81.28 0) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 187.96 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ac12fc9-718c-4532-a8ca-62dba0b63e02)
-    (property "Reference" "R33" (at 144.78 80.645 0)
+    (property "Reference" "R33" (at 190.5 86.995 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10k" (at 144.78 83.185 0)
+    (property "Value" "18k" (at 190.5 89.535 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 142.24 81.28 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 187.96 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 142.24 81.28 0)
+    (property "Datasheet" "~" (at 187.96 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7bf1a363-e7b2-42ff-9dff-90134f18e595))
     (pin "2" (uuid 37dd07bb-a603-47e5-bac2-24f02da2b806))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
           (reference "R33") (unit 1)
         )
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R42") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 243.84 134.62 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6caeb92f-0c72-48bf-ae3d-2a8d926bd601)
-    (property "Reference" "#PWR074" (at 243.84 140.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 243.84 138.43 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 243.84 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 243.84 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dfe6f3b7-433e-4c4e-9a60-7f9de648ab36))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR074") (unit 1)
-        )
-      )
-      (project "UCM23_PCB_Fault_Latch"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2801,7 +2466,7 @@
           (reference "#PWR019") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR012") (unit 1)
         )
@@ -2826,7 +2491,7 @@
     )
     (pin "1" (uuid f0f85d6f-7e61-4d2b-858a-ce4a5b34a765))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "J4") (unit 1)
         )
@@ -2834,31 +2499,35 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 167.64 110.49 0) (unit 1)
+  (symbol (lib_id "Device:D_Zener") (at 80.01 255.27 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7a8679d9-8e77-40f7-91f5-3d44fcaa6e62)
-    (property "Reference" "#PWR010" (at 167.64 114.3 0)
+    (uuid 7a3535fa-693a-45a8-9e6d-bcc33f602ee5)
+    (property "Reference" "D3" (at 81.28 257.81 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "771-PLVA650A" (at 81.28 255.27 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 80.01 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 167.64 106.68 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 167.64 110.49 0)
+    (property "Datasheet" "~" (at 80.01 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 167.64 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f75ff9be-7ec4-4ee4-a2b8-34aab0e94c82))
+    (pin "1" (uuid 0bf7211c-4b56-46e1-b297-6a3daa4f516f))
+    (pin "3" (uuid 468691d5-4e70-4e50-aa48-186d9069ce09))
     (instances
-      (project "UCM67_Discharge_TSAL_V2.0_PCB"
-        (path "/52185cc9-1fd6-4b96-945f-5419cec4bf0c"
-          (reference "#PWR010") (unit 1)
+      (project "VehicleJunctionBoxMotherboard_PCB"
+        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/65869be4-fe6d-4aba-b818-5470eeca9d0f"
+          (reference "D3") (unit 1)
+        )
+        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
+          (reference "D11") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR05") (unit 1)
+      (project "TSAL"
+        (path "/c9d7d292-40e5-43ee-a44d-fcbe89ce4dce"
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -2881,7 +2550,7 @@
     )
     (pin "1" (uuid 284c3948-f477-41e7-8dc9-eb8b76241119))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "J5") (unit 1)
         )
@@ -2913,7 +2582,7 @@
           (reference "Q1") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "Q5") (unit 1)
         )
@@ -2944,7 +2613,7 @@
           (reference "R2") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R10") (unit 1)
         )
@@ -2980,38 +2649,9 @@
     (pin "8" (uuid e8ab8dc7-4692-4ab3-99bb-8d547c2f76ff))
     (pin "9" (uuid b1db402f-2374-47f5-a664-b4f0aeb54ff9))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 243.84 124.46 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7e557889-f5ad-449c-882e-d853dbfa3a71)
-    (property "Reference" "R33" (at 246.38 123.825 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10k" (at 246.38 126.365 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 243.84 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 243.84 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f62032a9-0677-4402-8b8d-06a10225b3b0))
-    (pin "2" (uuid 4127d726-4cca-427f-8a38-ad9077e2161d))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
-          (reference "R33") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "R45") (unit 1)
         )
       )
     )
@@ -3039,9 +2679,48 @@
           (reference "#PWR010") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR03") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:LED_Small") (at 278.13 35.56 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7fa0ce5c-93a0-487e-b0cf-dc764cf80eba)
+    (property "Reference" "D5" (at 276.86 34.29 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "Green" (at 276.86 36.83 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 278.13 35.56 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 278.13 35.56 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a0108712-a243-4f9c-b0ee-8349e234c8d6))
+    (pin "2" (uuid f1063163-8c71-4e0d-af53-c26d4dc73ba2))
+    (instances
+      (project "VehicleJunctionBoxMotherboard_PCB"
+        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
+          (reference "D5") (unit 1)
+        )
+        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
+          (reference "D12") (unit 1)
+        )
+      )
+      (project "VehicleCurrentSense_PCB"
+        (path "/91f07020-125d-42cd-918a-21d0a50349ad"
+          (reference "D6") (unit 1)
+        )
+      )
+      (project "Discharge"
+        (path "/a730a794-4be2-4a8b-9b84-487291b66f03"
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -3070,7 +2749,7 @@
           (reference "L1") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "L1") (unit 1)
         )
@@ -3095,7 +2774,7 @@
     )
     (pin "1" (uuid 0cc012bf-03bd-4252-bb1d-f48ca50094d8))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR09") (unit 1)
         )
@@ -3126,7 +2805,7 @@
     (pin "1" (uuid 7e7f5244-fc45-4b26-b149-27b32e607f34))
     (pin "2" (uuid 7cfd7558-e6f3-488a-b1b0-3ac42f7d28a6))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R9") (unit 1)
         )
@@ -3157,7 +2836,7 @@
           (reference "D1") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "D1") (unit 1)
         )
@@ -3187,38 +2866,9 @@
           (reference "#PWR010") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR044") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 189.23 125.73 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b1608c54-4852-49d8-88c0-7a809f8cfa33)
-    (property "Reference" "R33" (at 191.77 125.095 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10k" (at 191.77 127.635 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 189.23 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 189.23 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ae581517-86d7-4c11-b90f-f502f0d24455))
-    (pin "2" (uuid 8b689113-fc7c-463f-a091-48ded95532db))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
-          (reference "R33") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "R36") (unit 1)
         )
       )
     )
@@ -3247,35 +2897,9 @@
           (reference "R1") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 162.56 110.49 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b8847ea9-4da4-4717-ae89-3d3c4f75a6c1)
-    (property "Reference" "C30" (at 162.5663 105.41 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100n" (at 162.5663 107.95 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 162.56 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 162.56 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 409bf590-987f-4b08-adcb-5c2daf15bca0))
-    (pin "2" (uuid 6372c8cf-6894-4a3a-b41a-c1122be56f36))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "C30") (unit 1)
         )
       )
     )
@@ -3298,7 +2922,7 @@
     )
     (pin "1" (uuid f362036a-731f-4c3c-80c9-98841e920dc1))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR011") (unit 1)
         )
@@ -3328,7 +2952,7 @@
     )
     (pin "1" (uuid c1f6b8cf-f059-40cc-8112-4c2d69930e35))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR01") (unit 1)
         )
@@ -3341,25 +2965,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 142.24 123.19 0) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 187.96 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c1e3be6c-2aa2-46a5-a898-048720a05a38)
-    (property "Reference" "R33" (at 144.78 122.555 0)
+    (property "Reference" "R33" (at 190.5 128.905 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "5.6k" (at 144.78 125.095 0)
+    (property "Value" "5.6k" (at 190.5 131.445 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 142.24 123.19 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 187.96 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 142.24 123.19 0)
+    (property "Datasheet" "~" (at 187.96 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a2a16918-5dc0-40e0-8cd4-d1c418f1bcb4))
     (pin "2" (uuid 9e18f767-b362-46d9-b0fc-6b1f726a7170))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
           (reference "R33") (unit 1)
         )
@@ -3370,19 +2994,19 @@
     )
   )
 
-  (symbol (lib_id "Regulator_Linear:AMS1117-5.0") (at 68.58 251.46 0) (unit 1)
+  (symbol (lib_id "Regulator_Linear:AMS1117-5.0") (at 53.34 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c23e5165-c695-46b3-9340-d74445478b44)
-    (property "Reference" "U1" (at 68.58 243.84 0)
+    (property "Reference" "U1" (at 53.34 243.84 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "AMS1117-5.0" (at 68.58 246.38 0)
+    (property "Value" "AMS1117-5.0" (at 53.34 246.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 68.58 246.38 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 53.34 246.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 71.12 257.81 0)
+    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 55.88 257.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 79b2e08b-0582-437e-93e9-0f17c327373d))
@@ -3394,74 +3018,9 @@
           (reference "U1") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "U1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 160.02 110.49 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c5de6025-1d74-42af-8d39-499a62e05f2c)
-    (property "Reference" "#PWR070" (at 160.02 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 160.02 114.3 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 160.02 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 160.02 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid cbf00233-464d-42ba-8af6-cc93883d2787))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR070") (unit 1)
-        )
-      )
-      (project "UCM23_PCB_Fault_Latch"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Comparator:TLV7031DBV") (at 170.18 121.92 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid cab692da-f1e7-4913-ac25-7b2486198936)
-    (property "Reference" "U10" (at 175.26 115.57 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TLV7031DBV" (at 175.26 118.11 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 167.64 127 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv7031.pdf" (at 170.18 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid b67f28ad-d0f7-4f90-9307-4b6e60cda2d6))
-    (pin "5" (uuid 5c89d05c-2fac-46cf-b233-2ba8f1fd55e1))
-    (pin "1" (uuid 6397a304-c13a-40ca-b81c-4d4830cd41ed))
-    (pin "3" (uuid ff18e57e-c31f-4e86-999a-2b8a3e362dbf))
-    (pin "4" (uuid 8874249f-d62c-4da5-aa36-7b27da893b11))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/8e7d080f-1767-4637-8f55-a695095fa33a"
-          (reference "U10") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
-          (reference "U6") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "U14") (unit 1)
         )
       )
     )
@@ -3484,7 +3043,7 @@
     )
     (pin "1" (uuid 0d9beab8-2a16-4896-b070-451dca893b58))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "H3") (unit 1)
         )
@@ -3492,56 +3051,26 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 68.58 261.62 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 53.34 261.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d0493970-2419-49be-a34f-4f78eb642870)
-    (property "Reference" "#PWR02" (at 68.58 267.97 0)
+    (property "Reference" "#PWR02" (at 53.34 267.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 68.58 265.43 0)
+    (property "Value" "GND" (at 53.34 265.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 68.58 261.62 0)
+    (property "Footprint" "" (at 53.34 261.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 68.58 261.62 0)
+    (property "Datasheet" "" (at 53.34 261.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a5f141dd-94a2-4146-af01-9837617c3544))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR02") (unit 1)
-        )
-      )
-      (project "UCM23_PCB_Fault_Latch"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 167.64 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d4adc3d5-5059-46fe-8aae-8b650fac88c2)
-    (property "Reference" "#PWR067" (at 167.64 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 167.64 99.06 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 167.64 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 167.64 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e43e534a-d61f-4c59-a6f4-cb73e90dccce))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR067") (unit 1)
         )
       )
       (project "UCM23_PCB_Fault_Latch"
@@ -3574,7 +3103,7 @@
           (reference "#PWR02") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR016") (unit 1)
         )
@@ -3599,39 +3128,9 @@
     )
     (pin "1" (uuid a81552d6-8b7b-4e59-ba38-608cb7fc7c66))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "H4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 189.23 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid dd7b490f-4b07-4f6f-9c57-d12d0787578a)
-    (property "Reference" "#PWR062" (at 189.23 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 189.23 97.79 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 189.23 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 189.23 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bcc9f245-2a21-449c-8906-825845d7c24b))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR062") (unit 1)
-        )
-      )
-      (project "UCM23_PCB_Fault_Latch"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -3654,7 +3153,7 @@
     )
     (pin "1" (uuid b6f7ea40-8458-46ad-84f2-1a14e44147e9))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "J6") (unit 1)
         )
@@ -3662,53 +3161,24 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 185.42 121.92 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e0c4f052-47db-4852-88cb-18817c7571cc)
-    (property "Reference" "R33" (at 185.42 116.84 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "5.6k" (at 185.42 119.38 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 185.42 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 185.42 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 78ae61b1-f815-4c01-bb4b-6131548ac833))
-    (pin "2" (uuid 98eb3200-6fcb-4fdb-87d0-5267ae7b0cf5))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
-          (reference "R33") (unit 1)
-        )
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "R34") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 85.09 261.62 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 69.85 261.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e802f93a-a83d-43f2-a530-a8efc142cf07)
-    (property "Reference" "#PWR018" (at 85.09 267.97 0)
+    (property "Reference" "#PWR018" (at 69.85 267.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 85.09 265.43 0)
+    (property "Value" "GND" (at 69.85 265.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 85.09 261.62 0)
+    (property "Footprint" "" (at 69.85 261.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 85.09 261.62 0)
+    (property "Datasheet" "" (at 69.85 261.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d74abab7-61fb-4e03-87aa-ed121ffeee23))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR018") (unit 1)
         )
@@ -3716,36 +3186,6 @@
       (project "UCM23_PCB_Fault_Latch"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 243.84 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ea9863eb-832d-4b8a-b2fe-483ba16822d5)
-    (property "Reference" "#PWR010" (at 243.84 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 243.84 116.84 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 243.84 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 243.84 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ff7a70e0-6491-4aee-a1a9-21f6905023f4))
-    (instances
-      (project "UCM67_Discharge_TSAL_V2.0_PCB"
-        (path "/52185cc9-1fd6-4b96-945f-5419cec4bf0c"
-          (reference "#PWR010") (unit 1)
-        )
-      )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -3768,7 +3208,7 @@
     )
     (pin "1" (uuid 5829800e-4ba8-4ba6-8d39-049ed02a91f1))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR060") (unit 1)
         )
@@ -3798,7 +3238,7 @@
     )
     (pin "1" (uuid 6f1eee80-eca9-438f-bebe-ba9ebbb52157))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "J7") (unit 1)
         )
@@ -3829,7 +3269,7 @@
           (reference "C3") (unit 1)
         )
       )
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "C6") (unit 1)
         )
@@ -3837,25 +3277,25 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 76.2 255.27 0) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 60.96 255.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid faa9a74c-b471-48a1-abe6-64209851d2b4)
-    (property "Reference" "C2" (at 78.74 254.6413 0)
+    (property "Reference" "C2" (at 63.5 254.6413 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22u" (at 78.74 257.1813 0)
+    (property "Value" "22u" (at 63.5 257.1813 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 76.2 255.27 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 60.96 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 76.2 255.27 0)
+    (property "Datasheet" "~" (at 60.96 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3eacae4d-368c-4883-846b-e48ed5dd7875))
     (pin "2" (uuid a5428b43-4c76-4bb4-9e81-c620261fbc93))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "C2") (unit 1)
         )
@@ -3880,7 +3320,7 @@
     )
     (pin "1" (uuid 08bd7866-645b-4ab6-ba0c-a07fe685255a))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "#PWR08") (unit 1)
         )
@@ -3893,60 +3333,30 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 278.13 39.37 180) (unit 1)
+  (symbol (lib_id "Device:R_Small") (at 278.13 41.91 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd5891b2-4006-4962-bba0-3b15732d00ac)
-    (property "Reference" "R33" (at 273.05 38.1 0)
+    (property "Reference" "R33" (at 273.05 40.64 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "10k" (at 273.05 40.64 0)
+    (property "Value" "4.7k" (at 273.05 43.18 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 278.13 39.37 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 278.13 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 278.13 39.37 0)
+    (property "Datasheet" "~" (at 278.13 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 30ebc48e-c290-40e1-a1ae-d51504401ef0))
     (pin "2" (uuid 5b076812-23d6-4a8f-b0f7-4b2e2a5ce92c))
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec/d51ada7b-6c07-4d28-bf39-907b2258b955"
           (reference "R33") (unit 1)
         )
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
           (reference "R5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 160.02 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ffab9053-797c-44df-af82-586a2b1f0b48)
-    (property "Reference" "#PWR065" (at 160.02 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 160.02 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 160.02 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 160.02 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 26b984ad-99bc-46d6-bd28-f3f785bf3f6e))
-    (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
-        (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec"
-          (reference "#PWR065") (unit 1)
-        )
-      )
-      (project "UCM23_PCB_Fault_Latch"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -3963,7 +3373,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec" (page "2"))
       )
     )
@@ -3980,7 +3390,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec" (page "3"))
       )
     )
@@ -3997,7 +3407,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "UCM23-PCB-Junction-Box-Motherboard"
+      (project "VehicleJunctionBoxMotherboard_PCB"
         (path "/8df4be00-e6b2-4d7e-99ff-6b2431c513ec" (page "4"))
       )
     )
